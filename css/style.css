@@ -1,0 +1,1487 @@
+/*--------- RESET ------------*/
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	border: none;
+	outline: none;
+	font-weight: 300;
+	box-sizing: border-box;
+	font-family: 'lato', sans-serif;
+}
+h3{
+	text-transform: uppercase;
+	color:#000000;
+	clear: left;
+}
+.logo-mobile{
+	display: none;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	float: right;
+}
+/* POPUP MODAL SEARCH */
+#openPopUp {
+    display: none;
+    text-align: center;
+    /* background-color: #1abc9c; */
+    padding: 15px 15px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.5em;
+    border-radius: 3.5px;
+    text-decoration: none;
+    font-weight: 100;
+    transition: background-color 0.15s linear;
+    -webkit-transition: background-color 0.15s linear;
+    -moz-transition: background-color 0.25s linear;
+    -o-transition: background-color 0.25s linear;
+}
+a#openPopUp:hover{
+	cursor: pointer;
+}
+.popup{
+	position: fixed;
+	top: -100vh;
+	left: 0;
+	z-index: 9999999;
+	background: rgba(0,0,0, 0.75);
+	width: 100vw;
+	height: 100vh;
+	opacity: 0;
+
+	-webkit-transition: opacity  0.35s ease;
+	-moz-transition: opacity 0.35s ease;
+	-o-transition: opacity 0.35s ease;
+	transition: opacity 0.35s ease;
+}
+.popUpContainer{
+    position: relative;
+    left: 306px;
+    padding: 18px;
+    width: 70%;
+}
+.popup .popUpContainer {
+    width: 90%;
+    max-width: 498px;
+    position: fixed;
+    left: 66%;
+    top: -100vh;
+    -webkit-transition: top 0.35s ease;
+    -moz-transition: top 0.35s ease;
+    -o-transition: top 0.35s ease;
+    transition: top 0.35s ease;
+    margin-left: -226px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    border-radius: 2px;
+    z-index: 9999999;
+}
+  .popup h2{
+	padding: 0.5em;
+	text-align: center;
+	color: #444444;
+	margin: 0;
+  }
+  .popup img{
+	width: 100%;
+	display: block;
+  }
+  .popup article{
+	height: 300px;
+	background-color: #e67e22;
+  }
+  .popup a.closePopUp{
+	font-family: verdana;
+	color: #e74c3c;
+	position: absolute;
+	top: 0.2em;
+	right: 0.375em;
+	margin: 0;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-decoration: none;
+  }
+  .popup a:hover{
+	color: #c0392b;
+  }
+  .popup:target{
+	opacity: 1;
+	top: 0;
+  }
+  .popup .closePopUpOutSide{
+	position: absolute;
+	left:0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999991; 
+  }
+  .popup:target .popUpContainer{
+	top: 50px;
+	  -webkit-transition: top  0.35s ease;
+	  -moz-transition: top 0.35s ease;
+	  -o-transition: top 0.35s ease;
+	  transition: top 0.35s ease;
+  }
+#svg{
+	float: left;
+}
+.servico{
+    margin-right: 7px;
+}
+.servico article {
+    margin: 7px;
+}
+/* MENU DESKTOP */
+.menu-desk{
+	width: 100%;
+	height: 150px;
+	display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+	border-bottom: 1px solid grey;
+}
+.main-menu ul {
+	display: flex;
+	align-items: center;
+    justify-content: space-evenly;
+	margin-bottom: 20px;
+}
+.main-menu li{
+	margin-right: 5px;
+	font-size: 1.2rem;
+}
+.main-menu a{
+	color: grey;
+}
+.main-menu a:hover{
+    color:#6b6b6b;
+    text-shadow: 0px 0px 10px #2c2c2c;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+/* FIM MENU DESKTOP */
+
+
+/* MENU HAMBURGER */
+input[type="checkbox"]:checked ~ nav{
+    transform: translateX(350px);
+    transition: transform 0.4s;
+}
+
+.nav-hamburger ul{
+    list-style: none;
+    top: 70px;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+#hamburger{
+    width: 40px;
+    cursor: pointer;
+}
+.checkbox[type="checkbox"]{
+    display: none;
+}
+.nav-hamburger {
+    background-color: rgba(16, 16, 16, .5);
+    width: 350px;
+    left: -484px;
+    bottom: 115px;
+    height: 100%;
+    position: relative;
+}
+.nav-hamburger a{
+    display: block;
+    padding: 20px 5px;
+    color: #ffffff;
+    background-color: #171717;
+}
+.nav-hamburger a:hover{
+background-color: rgb(176, 224, 230);
+}
+#lbl{
+	padding: 15px;
+    position: absolute;
+    z-index: 10000;
+    left: 100px;
+    top: 82px;
+}
+/* FIM MENU HAMBURGER */
+
+/*-------CONTAINER------------*/
+.container {
+    width: 100%;
+    float: right;
+    padding: 0% 7%;
+    text-align: center;
+}
+.bg-white{
+	background-color:#ffffff;
+}
+.bg-grey{
+	background-color:#f2f2f2;
+}
+body{
+	background-color: #f2f2f2;
+}
+a{
+	text-decoration: none;
+	text-transform: uppercase;
+}
+ul{
+	list-style: none;
+}
+img{
+	max-width: 100%;
+}
+#img:hover{
+	transition: transform .6s ease-out;
+	transform:scale(1.1);
+	/*transition: transform .9s ease-out;*/
+}
+.logo{
+	width: 56px;
+	height: 56px;
+	float: left;
+	font-size: 0;
+}
+/* CONFIGURAÇÕES DO MENU */
+.btn-menu{
+	width: 56px;
+	height: 56px;
+	float: left;
+	text-align: center;
+	color: #000;
+	border-radius: 56px;
+	cursor: pointer;
+	background: linear-gradient(to right,#094d4a ,#da6709);
+}
+.menu{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0,0.9);
+	top: 0;
+	left: 0;
+}
+.btn-close{
+	font-size: 3em;
+	color: #b8d3ff;
+	float: right;
+	cursor: pointer;
+	margin: 2% 3% 0 0;
+}
+.menu ul{
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+.menu li{
+	padding: 1.5%;
+}
+.menu li a{
+	font-size: 2em;
+	color: #b8d3ff;
+	padding: 1.5% 3%;
+	font-family: 10pt Normal Arial;
+}
+.menu li a:hover{
+	border: 1px solid #da6709;
+	transition: 2s;
+	border: transition 2s #da6709;
+}
+/*Configurações do Banner*/
+.title{
+	width: 100%;
+}
+.banner{
+
+}
+.banner h2{
+	font-size: 2.2em;
+	color: #fff;
+	font-weight: 700;
+	text-align: left;
+}
+.banner h3{
+	font-size: 1.2em;
+	color: #000000;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+.buttons{
+	width: 100%;
+	margin-top: 5%;
+}
+.cadastrar:hover{
+	color: #fff;
+	background-color: #949494;
+	transition: background-color 0.2s, color 0.2s;
+	box-shadow: 4px 0px 15px rgba(0,0,0,.5);
+}
+.sobre:hover{
+	color: #fff;
+	background-color: #949494;
+	transition: background-color 0.2s, color 0.2s;
+	box-shadow: 4px 0px 15px rgba(0,0,0,.5);
+}
+#botao1:hover{
+	color: #fff;
+	background-color: #949494;
+	transition: background-color 0.2s, color 0.2s;
+	box-shadow: 4px 0px 15px rgba(0,0,0,.5);
+}
+.buttons i{
+	float: right;
+}
+.cadastrar{
+	width: 100%;
+	font-size: 1.5em;
+	text-align: left;
+	cursor: pointer;
+	padding: 5%;
+	border-radius: 10px;
+	background-color: #fff;
+	color:#130400;
+
+}
+.sobre{
+	width: 100%;
+	font-size: 1.5em;
+	text-align: left;
+	cursor: pointer;
+	padding: 5%;
+	border-radius: 10px;
+	background-color: #000;
+	color:#fff;
+	margin-top: 2%;
+
+}
+/* SLIDER */
+#slider{
+    overflow: hidden;
+    width: 100%;
+	border-radius: 15px 15px;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -300%;
+    }
+}
+/* FIM SLIDER */
+
+/* servicos */
+.servicos{
+	width: 100%;
+	float: left;
+	padding: 3% 4%;
+	margin-top: 100px;
+	text-align: left;
+    border-bottom: 1px solid grey;
+}
+.entretenimento{
+	width: 65%;
+	float: left;
+	padding: 3% 4%;
+	margin-top: 100px;
+	text-align: left;
+    border-bottom: 1px solid grey;
+}
+.entretenimento2{
+	width: 65%;
+	float: left;
+	padding: 3% 4%;
+	margin-top: 100px;
+	text-align: left;
+}
+.entretenimento-top{
+	width: 65%;
+	float: left;
+	display: flex;
+	padding: 3% 4%;
+	text-align: left;
+	border-bottom: 1px solid grey;
+	flex-direction: column;
+}
+.entretenimento-top .servico {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.entretenimento-top .servico img {
+	border-radius: 7px 7px 10px 10px;
+	width: 50%;
+}
+.entretenimento-top .servico a {
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 30%;
+}
+.entretenimento-top .servico .inner {
+		padding: 0%;
+		text-align: left;
+}
+
+.musica{
+    width: 35%;
+    float: right;
+    padding: 0% 5%;
+    text-align: right;
+    margin-top: 95px;
+}
+.outros{
+	width: 35%;
+    float: right;
+    display: flex;
+    padding: 0% 2.7%;
+    text-align: right;
+    flex-direction: column-reverse;
+}
+.outros2{
+	width: 35%;
+    float: right;
+    display: flex;
+    padding: 0% 2.7%;
+    text-align: right;
+    flex-direction: column-reverse;
+}
+.videos{
+	width: 100%;
+	float: left;
+	padding: 3% 4%;
+	margin-top: 100px;
+	text-align: left;
+    border-bottom: 1px solid grey;
+}
+.servico{
+	width: 100%;
+	background-color: #fff;
+	text-align: left;
+	border-radius: 7px;
+	margin-bottom: 3%;
+	margin-right: 7px;
+}
+.musica .servico{
+	width: 45%;
+	background-color: #fff;
+	text-align: left;
+	float: right;
+	border-radius: 7px;
+	margin-bottom: 3%;
+}
+#video{
+    width: 100%;
+}
+.servico img{
+	border-radius: 7px 7px 0 0;
+}
+.inner{
+	padding: 7%;
+}
+.inner a{
+	font-size: 1.2em;
+	color: #130400;
+	font-weight: 700;
+}
+.inner h4{
+	font-size: 1.2em;
+	color: #130400;
+	margin-top: 2%;
+}
+.inner p{
+	margin-top: 6%;
+	color: #130400;
+	font-weight: 600;
+	line-height: 1.5em;
+}
+/* search*/
+.search{
+	display: block;
+	background-color: #f2f2f2;
+	margin-top: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.search form{
+	width: 50%;
+}
+.footer2{
+	background-color: #121213;
+	width: 100%;
+	height:100%;
+	float: left;
+	font-size: 18px;
+	padding: 50px 10px 50px 10px;
+}
+.footer2 .left{ 
+	width:100%; 
+	float:left; 
+	border-bottom:1px #222424 solid;
+	border-right:0; 
+	margin-bottom:20px; 
+    padding-bottom:20px;
+}
+.footer .title-footer {
+	color: #ffffff;
+	font-family: 'DM Sans', sans-serif;
+	font-weight: initial;
+    font-size:26px;
+    width:100%;
+    float:left;
+    margin-bottom:15px;
+}
+.footer .title-footer span{
+	color:  #2fcacf;
+	font-family:'DM Sans', sans-serif;
+	font-weight: bold;
+}
+.footer .links{
+	
+	width: 100%;
+	float: left;
+	color:  #ffffff;
+	margin-bottom: 20px;
+	padding: 0;
+}
+.footer .links a{
+    display: block;
+    line-height: 33px;
+    text-decoration: none;
+    color: #fff;
+    font-family:'DM Sans', sans-serif;
+    font-size:16px;
+    transition:0.3s;
+}
+.footer .links a:hover { color:#2fcacf; }
+.footer .Copyright{
+	font-family:'DM Sans', sans-serif;
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.footer .footer-icons{
+	
+	width:100%;
+	float:left;
+	margin-bottom:20px;
+}
+.footer .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 50px;
+    font-family:'DM Sans', sans-serif;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;	
+	line-height: 35px;
+	margin-bottom: 5px;
+	transition:0.3s;
+}
+.footer .footer-icons a:hover{ background-color:#2fcacf; }
+/*Right*/
+.footer .right   { width:100%; float:left; }
+.footer .right p {
+	font-family: 'DM Sans', sans-serif;
+	font-weight: initial;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 30px;
+	color: #ffffff;
+}
+.search h2{
+	font-size: 1.5em;
+	color: #fff;
+	font-weight: 700;
+}
+.search h3{
+	color: #fff;
+}
+.search form{
+	margin-top: 1%;
+	margin-right: 0%;
+}
+.search input{
+	width: 100%;
+	background-color: #ffffff;
+	padding-left: 25px;
+	background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+	background-size: 30px;
+	color: #000000;
+	border: 1px solid rgba(255,255,255,0,3);
+	padding: 5%;
+	border-radius: 5px;
+	border-radius: 56px;
+	height: 30px;
+	box-shadow: 0px 0px 11px 1px grey;
+}
+.search button{
+	width: 100%;
+	color: #130400;
+	padding: 5%;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 2%;
+}
+#serach{
+	
+}
+/* FOOTER */
+.rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*FIM DA CONFIGURAÇÃO DO FOOTER */
+@media screen and(max-width: 320px){
+	.entretenimento {
+		width: 100%;
+		float: left;
+		padding: 3% 4%;
+		margin-top: 100px;
+		text-align: left;
+		/* height: 683px; */
+		border-bottom: 1px solid grey;
+	}
+}
+/* Animação para o Body */
+@-webkit-keyframes fadeIn {
+	 0%{
+	transform: translateX(-100%);
+	opacity: 0.2;
+	}
+	100%{
+		transform: translateX(0%);
+		opacity:0.2;
+	}
+0% { opacity: 0; }
+100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+0% { opacity: 0;}
+100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+@keyframes fadeIn {
+	 0%{
+	transform: translateX(-20%);
+	opacity: 0.9;
+	}
+	100%{
+		transform: translateX(0%);
+	}
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+.fadeIn {
+	animation-name: fadeIn;
+	-webkit-animation: fadeIn 1s ease-in-out;
+	-moz-animation: fadeIn 1s ease-in-out;
+	-o-animation: fadeIn 1s ease-in-out;
+	animation: fadeIn 0.5s left-in-out;
+}
+/*FIM DA CONFIGURAÇÃO PARA O BODY */
+@media screen and (min-width: 480px){
+    .logo{
+        width: 214px;
+    }
+    .btn{
+        font-size: 2em;
+    }
+	
+}
+@media screen and ((min-width: 280px) and (max-width: 479px)){
+	.main-menu ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		margin-bottom: 20px;
+		display: none;
+	}
+	.entretenimento {
+		width: 100%;
+		float: left;
+		padding: 3% 4%;
+		margin-top: 100px;
+		text-align: left;
+		/* height: 683px; */
+		border-bottom: 1px solid grey;
+	}
+	.entretenimento2 {
+		width: 100%;
+		float: left;
+		padding: 3% 4%;
+		margin-top: 100px;
+		text-align: left;
+	}
+	.entretenimento-top {
+		width: 100%;
+		float: left;
+		display: flex;
+		padding: 3% 4%;
+		text-align: left;
+		border-bottom: 1px solid grey;
+		flex-direction: column;
+	}
+	.musica {
+		width: 100%;
+		float: left;
+		padding: 3% 4%;
+		margin-top: 100px;
+		text-align: left;
+		/* height: 683px; */
+		border-bottom: 1px solid grey;
+	}
+	.entretenimento-top {
+		width: 100%;
+		float: left;
+		padding: 3% 4%;
+		margin-top: 100px;
+		text-align: left;
+		/* height: 683px; */
+		border-bottom: 1px solid grey;
+	}
+	.musica .servico {
+		width: 100%;
+		background-color: #fff;
+		text-align: left;
+		float: left;
+		border-radius: 7px;
+		margin-bottom: 3%;
+		margin-right: 14px;
+	}
+	.search{
+		display: none;
+		background-color: #f2f2f2;
+		margin-top: 30px;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+	}
+	.logo {
+		width: 56px;
+		height: 56px;
+		float: left;
+		font-size: 0;
+		display: none;
+	}
+	.search input{
+	    position: relative;
+    	top: 131px;
+		display: none;
+	}
+	.outros {
+		width: 100%;
+		float: right;
+		display: flex;
+		padding: 0% 2.7%;
+		margin-top: 20px;
+		text-align: right;
+		flex-direction: column-reverse;
+	}
+	.outros2 {
+		width: 100%;
+		float: right;
+		display: flex;
+		padding: 0% 2.7%;
+		margin-top: 20px;
+		text-align: right;
+		flex-direction: column-reverse;
+	}
+	/* .footer               { padding: 100px 50px 50px 100px; } */
+	.footer .Copyright    { font-size: 11px; }
+	.footer .Copyright a    { color: #ffffff; text-transform: none; }
+	.footer form input,
+	.footer form textarea { width: 100%; float:left; }
+	.footer form button   { padding: 10px 35px; }
+	.search {
+		display: none;
+		background-color: #f2f2f2;
+		margin-top: 7px;
+		display: flex;
+		line-height: 0;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	#openPopUp{
+		display: block;
+		text-align:center;
+		background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+		background-size: 56px;
+		padding: 27px 27px;
+		color: #ffffff;
+		float: right;
+		font-weight: 500;
+		margin-right: 26px;
+		margin-top: 10px;
+		font-size: 1.5em;
+		border-radius: 3.5px;
+		text-decoration: none;
+		font-weight: 100;
+		transition:background-color 0.15s linear;
+		-webkit-transition:background-color 0.15s linear;
+		-moz-transition:background-color 0.25s linear;
+		-o-transition:background-color 0.25s linear;
+	}
+	.logo-mobile{
+		display: block;
+		text-align: center;
+		width: 100%;
+		margin: 0;
+		float: right;
+	}
+	.entretenimento-top .servico {
+		width: 100%;
+		background-color: #fff;
+		text-align: left;
+		float: left;
+		border-radius: 7px;
+		margin-bottom: 3%;
+		margin-right: 14px;
+	}
+	.entretenimento-top .servico {
+		width: 100%;
+		display: block;
+		flex-direction: row;
+		align-items: center;
+	}
+	.entretenimento-top .servico img {
+		border-radius: 7px 7px 10px 10px;
+		width: 100%;
+		padding: 25px;
+	}
+	#lbl {
+		padding: 15px;
+		position: absolute;
+		z-index: 10000;
+		left: 17px;
+		top: 9px;
+	}
+	.nav-hamburger {
+		background-color: rgba(16, 16, 16, .5);
+		width: 350px;
+		left: -379px;
+		height: 100%;
+		bottom: 176px;
+		position: relative;
+	}
+}
+@media screen and ((min-width: 540px) and (max-width: 720px)){
+	.main-menu ul {
+		display: none;
+		align-items: center;
+		justify-content: space-evenly;
+		margin-bottom: 20px;
+	}
+	.search {
+		display: block;
+		background-color: #f2f2f2;
+		margin-top: 30px;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+		justify-content: center;
+	}
+	#lbl {
+		padding: 15px;
+		position: absolute;
+		z-index: 10000;
+		left: 52px;
+		top: 48px;
+	}
+	#openPopUp{
+		display: block;
+		text-align:center;
+		background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+		background-size: 56px;
+		padding: 27px 27px;
+		color: #ffffff;
+		float: right;
+		position: relative;
+		bottom: 45px;
+		font-weight: 500;
+		margin-right: 26px;
+		margin-top: 10px;
+		font-size: 1.5em;
+		border-radius: 3.5px;
+		text-decoration: none;
+		font-weight: 100;
+		transition:background-color 0.15s linear;
+		-webkit-transition:background-color 0.15s linear;
+		-moz-transition:background-color 0.25s linear;
+		-o-transition:background-color 0.25s linear;
+	}
+	.nav-hamburger {
+		background-color: rgba(16, 16, 16, .5);
+		width: 350px;
+		left: -388px;
+		height: 100%;
+		position: relative;
+	}
+	.musica .servico {
+		width: 100%;
+		background-color: #fff;
+		text-align: left;
+		float: right;
+		border-radius: 7px;
+		margin-bottom: 3%;
+	}
+	.entretenimento {
+		width: 100%;
+		float: left;
+		padding: 3% 4%;
+		margin-top: 100px;
+		text-align: left;
+		border-bottom: 1px solid grey;
+	}
+	.outros {
+		width: 100%;
+		float: left;
+		display: flex;
+		padding: 0% 0%;
+		text-align: right;
+		flex-direction: column-reverse;
+	}
+	.musica {
+		width: 100%;
+		float: right;
+		padding: 0% 5%;
+		text-align: left;
+		margin-top: 95px;
+	}
+	.outros2 {
+		width: 100%;
+		float: right;
+		display: flex;
+		padding: 0% 2.7%;
+		text-align: right;
+		flex-direction: column-reverse;
+	}
+	.entretenimento2 {
+		width: 101%;
+		float: left;
+		padding: 3% 4%;
+		margin-top: 100px;
+		text-align: left;
+	}
+	.entretenimento-top {
+		width: 100%;
+		float: left;
+		display: flex;
+		padding: 3% 4%;
+		margin-bottom: 29px;
+		text-align: left;
+		border-bottom: 1px solid grey;
+		flex-direction: column;
+	}
+	.entretenimento-top .servico {
+		width: 100%;
+		display: block;
+		flex-direction: row;
+		align-items: center;
+	}
+	.entretenimento-top .servico img {
+		border-radius: 7px 7px 10px 10px;
+		width: 100%;
+		padding: 25px;
+	}
+}
+@media screen and (min-width: 768px){
+    .servico{
+		padding: 00px;
+        width: 100%;
+        float: left;
+        /* margin-right: 2%; */
+    }
+	.main-menu ul {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		white-space: nowrap;
+		margin-bottom: 20px;
+	}
+	.main-menu a {
+		color: grey;
+		font-size: small;
+	}
+	#search {
+		position: relative;
+		top: 0px;
+		left: 0px;
+		padding: 0px;
+		width: 90%;
+		border-radius: 47px;
+	}
+    .servico:nth-child(2){
+        margin-right: 0;
+    }
+    .search h2{
+        font-size: 2em;
+    }
+    .search h3{
+        font-size: 1.5em;
+    }
+    .search input{
+        width: 70%;
+        padding: 2%;
+        float: left;
+        margin-right: 1%;
+    }
+	.search{
+		display: none;
+		background-color: #f2f2f2;
+		margin-top: 30px;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+	}
+    .search button{
+        width: 29%;
+        padding: 2%;
+        float: right;
+        margin-top: 0;
+    }
+	.footer .left         { width:48%; border-bottom:0; }
+	.footer .left img        { width: 15%; float: right; }
+	.footer .right        { width:48%; padding-left: 4%; border-left: 1px #222424 solid; } 
+	.footer form          { margin-top: 30px; }
+	.footer form          { display: block; }
+	.footer form button   { float: none; }
+	.footer .Copyright a    { color: #ffffff; text-transform: none; }
+	.logo-mobile{
+		display: block;
+		text-align: center;
+		width: 100%;
+		margin: 0;
+		float: right;
+		padding-bottom: 35px;
+		border-bottom: 1px solid grey;
+	}
+	#openPopUp{
+		display: block;
+		text-align:center;
+		background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+		background-size: 56px;
+		padding: 27px 27px;
+		color: #ffffff;
+		float: right;
+		position: relative;
+		right: 72px;
+		top: 82px;
+		font-weight: 500;
+		margin-right: 26px;
+		margin-top: 10px;
+		font-size: 1.5em;
+		border-radius: 3.5px;
+		text-decoration: none;
+		font-weight: 100;
+		transition:background-color 0.15s linear;
+		-webkit-transition:background-color 0.15s linear;
+		-moz-transition:background-color 0.25s linear;
+		-o-transition:background-color 0.25s linear;
+	}
+	.popup .popUpContainer {
+		width: 90%;
+		max-width: 498px;
+		position: fixed;
+		left: 48%;
+		top: -100vh;
+		-webkit-transition: top 0.35s ease;
+		-moz-transition: top 0.35s ease;
+		-o-transition: top 0.35s ease;
+		transition: top 0.35s ease;
+		margin-left: -226px;
+		background-color: #ffffff;
+		-webkit-box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+		-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+		box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+		border-radius: 2px;
+		z-index: 9999999;
+	}
+	.entretenimento {
+		width: 100%;
+		float: left;
+		padding: 3% 4%;
+		margin-top: 100px;
+		text-align: left;
+		border-bottom: 1px solid grey;
+	}
+	.musica {
+		width: 100%;
+		float: right;
+		padding: 0% 5%;
+		text-align: right;
+		margin-top: 95px;
+	}
+	.musica .servico {
+		width: 100%;
+		background-color: #fff;
+		text-align: left;
+		float: right;
+		border-radius: 7px;
+		margin-bottom: 3%;
+	}
+	.outros {
+		width: 100%;
+		float: right;
+		display: flex;
+		padding: 0% 0%;
+		text-align: right;
+		flex-direction: column-reverse;
+	}
+	.entretenimento2 {
+		width: 100%;
+		float: left;
+		padding: 3% 4%;
+		margin-top: 100px;
+		text-align: left;
+	}
+	.entretenimento-top {
+		width: 100%;
+		float: left;
+		display: flex;
+		margin-bottom: 20px;
+		padding: 3% 4%;
+		text-align: left;
+		border-bottom: 1px solid grey;
+		flex-direction: column;
+	}
+	.entretenimento-top .servico {
+		width: 100%;
+		display: block;
+		flex-direction: row;
+		align-items: center;
+	}
+	.outros2 {
+		width: 100%;
+		float: right;
+		display: flex;
+		padding: 0% 0%;
+		text-align: right;
+		flex-direction: column-reverse;
+	}
+	.entretenimento-top .servico img {
+		border-radius: 7px 7px 10px 10px;
+		width: 100%;
+		padding: 25px;
+	}
+}
+
+@media screen and (min-width: 960px){
+    .title{
+        width: 70%;
+        float: left;
+        text-align: left;
+    }
+    .title h2{
+        font-size: 3em;
+    }
+    .title h3{
+        font-size: 2em;
+    }
+    .buttons{
+        width: 20%;
+        float: right;
+        margin-top: 0;
+    }
+    .servico{
+        width: 24%;
+    }
+    .servico:nth-child(2){
+        margin-right: 1%;
+    }
+    .servico:nth-child(3){
+		margin-right: 8px;
+    }
+    .search input{
+		width: 30%;
+		float: left;
+    }
+    .search button{
+        width: 20%;
+        float: none;
+    }
+    .main-menu a {
+		color: grey;
+		font-size: larger;
+		margin-right: 25px;
+	}
+	.outros .servico{
+		width: 100%;
+	}
+	.outros2 .servico{
+		width: 100%;
+	}
+	.footer               { padding: 100px 50px 50px 100px; }
+	.footer .Copyright    { font-size: 11px; }
+	.footer .Copyright a    { color: #ffffff; text-transform: none; }
+	.footer form input,
+	.footer form textarea { width: 100%; float:left; }
+	.footer form button   { padding: 10px 35px; }
+	#openPopUp{
+		display: block;
+		text-align:center;
+		background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+		background-size: 56px;
+		padding: 27px 27px;
+		color: #ffffff;
+		float: right;
+		position: relative;
+		right: 215px;
+		top: 82px;
+		font-weight: 500;
+		margin-right: 26px;
+		margin-top: 10px;
+		font-size: 1.5em;
+		border-radius: 3.5px;
+		text-decoration: none;
+		font-weight: 100;
+		transition:background-color 0.15s linear;
+		-webkit-transition:background-color 0.15s linear;
+		-moz-transition:background-color 0.25s linear;
+		-o-transition:background-color 0.25s linear;
+	}
+	.entretenimento {
+		width: 65%;
+		float: left;
+		padding: 3% 4%;
+		margin-top: 100px;
+		text-align: left;
+		border-bottom: 1px solid grey;
+	}
+	.musica {
+		width: 35%;
+		float: right;
+		padding: 0% 5%;
+		text-align: right;
+		margin-top: 95px;
+	}
+	.musica .servico {
+		width: 45%;
+		background-color: #fff;
+		text-align: left;
+		float: right;
+		border-radius: 7px;
+		margin-bottom: 3%;
+	}
+	.outros {
+		width: 35%;
+		float: right;
+		display: flex;
+		padding: 0% 2.7%;
+		text-align: right;
+		flex-direction: column-reverse;
+	}
+	.entretenimento2 {
+		width: 65%;
+		float: left;
+		padding: 3% 4%;
+		margin-top: 100px;
+		text-align: left;
+	}
+	.entretenimento-top {
+		width: 65%;
+		float: left;
+		display: flex;
+		padding: 3% 4%;
+		text-align: left;
+		border-bottom: 1px solid grey;
+		flex-direction: column;
+	}
+	.entretenimento-top .servico {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.outros2 {
+		width: 35%;
+		float: right;
+		display: flex;
+		padding: 0% 2.7%;
+		text-align: right;
+		flex-direction: column-reverse;
+	}
+	.entretenimento-top .servico img {
+		border-radius: 7px 7px 10px 10px;
+		width: 100%;
+		padding: 25px;
+	}
+	.videos {
+		width: 100%;
+		float: left;
+		padding: 3% 4%;
+		margin-top: 100px;
+		text-align: left;
+		border-bottom: 1px solid grey;
+	}
+}
+
+@media screen and (min-width: 1280px){
+    .btn-menu{
+        display: none;
+    }
+    .btn-close{
+        display: none;
+    }
+    .menu{
+        width: auto;
+        height: 56px;
+        line-height: 56px;
+        float: right;
+        background-color: #f5f5f5;
+        display: block !important;
+        position: static;
+    }
+    .menu li{
+        padding: 0;
+        float: left;
+    }
+    .menu li a{
+        color: #130400;font-size: 1em;
+        padding: 15px;
+    }
+    .menu li a:hover{
+        border: none;
+        color: #da6709;
+    }
+	.footer               { padding: 100px 50px 50px 100px; }
+	.footer .Copyright    { font-size: 11px; }
+	.footer .Copyright a    { color: #ffffff; text-transform: none; }
+	.footer form input,
+	.footer form textarea { width: 100%; float:left; }
+	.footer form button   { padding: 10px 35px; }
+	#openPopUp{
+		display: block;
+		text-align:center;
+		background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+		background-size: 56px;
+		padding: 27px 27px;
+		color: #ffffff;
+		float: right;
+		position: relative;
+		right: 215px;
+		top: 82px;
+		font-weight: 500;
+		margin-right: 26px;
+		margin-top: 10px;
+		font-size: 1.5em;
+		border-radius: 3.5px;
+		text-decoration: none;
+		font-weight: 100;
+		transition:background-color 0.15s linear;
+		-webkit-transition:background-color 0.15s linear;
+		-moz-transition:background-color 0.25s linear;
+		-o-transition:background-color 0.25s linear;
+	}
+	.musica .servico {
+		width: 45%;
+		background-color: #fff;
+		text-align: left;
+		float: right;
+		border-radius: 7px;
+		margin-bottom: 3%;
+	}
+	.outros {
+		width: 35%;
+		float: right;
+		display: flex;
+		padding: 0% 2.7%;
+		text-align: right;
+		flex-direction: column-reverse;
+	}
+	.entretenimento2 {
+		width: 65%;
+		float: left;
+		padding: 3% 4%;
+		margin-top: 100px;
+		text-align: left;
+	}
+	.entretenimento-top {
+		width: 65%;
+		float: left;
+		display: flex;
+		padding: 3% 4%;
+		text-align: left;
+		border-bottom: 1px solid grey;
+		flex-direction: column;
+	}
+	.entretenimento-top .servico {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.outros2 {
+		width: 35%;
+		float: right;
+		display: flex;
+		padding: 0% 2.7%;
+		text-align: right;
+		flex-direction: column-reverse;
+	}
+	.entretenimento-top .servico img {
+		border-radius: 7px 7px 10px 10px;
+		width: 100%;
+		padding: 25px;
+	}
+	.videos {
+		width: 100%;
+		float: left;
+		padding: 3% 4%;
+		margin-top: 100px;
+		text-align: left;
+		border-bottom: 1px solid grey;
+	}
+}
